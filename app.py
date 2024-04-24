@@ -36,7 +36,8 @@ JOBS = [
 
 @app.route("/")
 def index():
-    return render_template('home.html')
+    return render_template('home.html',
+                           jobs=JOBS)
 
 @app.route("/api/jobs")
 def list_jobs():
