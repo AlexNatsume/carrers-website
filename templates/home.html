@@ -20,30 +20,33 @@
         </script>
         {% include 'nav.html' %}
         <div class="container">
-            <!-- <h1 class="text-center mt-2 mb-3">Sakura Careers</h1> -->
-            <img class="img-fluid" src="/static/banner.jpg" width="1200" height="450">
-            <h2 class="text-center mt-2 mb-3">About Sakura</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Posuere sollicitudin aliquam ultrices sagittis
-                orci a.
-                Tincidunt vitae semper quis lectus nulla
-                at. Pretium vulputate sapien nec sagittis aliquam malesuada
-                bibendum. Cursus metus aliquam eleifend mi in nulla.
-                Interdum velit laoreet id donec ultrices. Urna condimentum
-                mattis
-                pellentesque id nibh tortor id. Porta non
-                pulvinar neque laoreet. Sapien faucibus et molestie ac feugiat
-                sed
-                lectus vestibulum mattis. Venenatis urna
-                cursus eget nunc scelerisque viverra mauris. Amet risus nullam
-                eget
-                felis eget nunc lobortis mattis aliquam. At
-                quis risus sed vulputate odio ut enim blandit volutpat. Leo
-                integer
-                malesuada nunc vel risus commodo.
-            </p>
+            <img class="img-fluid" style="width: 100%; object-fit: cover;"
+                src="/static/banner.jpg" width="1200"
+                height="450">
+            <h1 class="text-center mt-2 mb-3">Sakura Careers</h1>
+            <div class="row" style="margin-bottom:32px">
+                <div class="col-md-6">
+                    <p style="margin-bottom: 20px;">
+                        At Sakura, our mission is to help people get jobs. We
+                        have more than ~13,000 global employees passionately
+                        pursuing this purpose and improving the recruitment
+                        journey through real stories and data. We foster a
+                        collaborative workplace that strives to create the best
+                        experience for job seekers.
+                    </p>
+                    <p> 
+                        Sakura's leadership team is diverse, dedicated and
+                        committed to empowering our employees to fulfill our
+                        mission: We help people get jobs. By fostering strong
+                        partnerships and collaboration, they serve and support
+                        job seekers, employers, society and our employees.
+                    </p>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="/static/fuji_sakura.jpg"
+                        style="height:420px;border-radius:4px;">
+                </div>
+            </div>
             <h2 class="text-center">Open Positions</h2>
             <div>
                 {% include 'jobItems.html' %}
@@ -51,7 +54,6 @@
         </div>
         <div class="container text-center">
             <button class="btn btn-primary bln-lg">Contact Us</button>
-            <!-- <p class="mt-4">Copyright 2024, Alex</p> -->
             {% include 'footer.html' %}
         </div>
     </body>
