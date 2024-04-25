@@ -11,7 +11,7 @@
         </div>
         {% if 'salary' in job %}
         <div>
-            <b>Salary: {{ job['salary'] }}</b>
+            <b>Salary: {{ job['currency'] }}{{ job['salary'] }}</b>
         </div>
         {% endif %}
     </div>
